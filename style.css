@@ -14,10 +14,10 @@ body * {
 
 /*contaner*/
 #contaner {
-  border: 1px solid red;
   width: 360px;
   height: 712px;
   margin: 56px auto 0px;
+  padding: 0px 24px;
 }
 /*profile*/
 #profile {
@@ -33,4 +33,32 @@ body * {
   font-weight: 500px;
   line-height: 24px;
   margin-top: 8px;
+}
+
+/*links*/
+uL {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0px;
+}
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+/*sub-sector*/
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1.5px solid white;
 }
