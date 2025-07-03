@@ -3,13 +3,23 @@
   padding: 0px;
   box-sizing: border-box;
 }
+:root {
+  --text-color: white;
+  --ubg-url: url(./assets/bg-mobile.jpg);
+}
+
+.light {
+  --text-color: black;
+  --ubg-url: url(./assets/bg-mobile-light.jpg);
+}
 
 body {
-  background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+  background: var(--ubg-url) no-repeat top center/cover;
 }
+
 body * {
   font-family: "inter" sans-serif;
-  color: #fff;
+  color: var(--text-color);
 }
 
 /*contaner*/
@@ -60,7 +70,7 @@ ul li a {
 /*sub-sector*/
 ul li a:hover {
   background: rgba(255, 255, 255, 0.5);
-  border: 1.5px solid white;
+  border: 1.5px solid var(--text-color);
 }
 
 /*social-links*/
